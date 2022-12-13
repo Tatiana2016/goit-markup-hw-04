@@ -91,8 +91,8 @@ h1 ,h2, h3, p {
     margin-right: 40px;
     color: #757575;
   }
-  .kontakt:hover,
-  .kontakt:focus{
+  .item .kontakt-icons:hover,
+  .item .kontakt-icons:focus{
     color:var(--hover-color)
   }
   .kontakt-icons {
@@ -103,29 +103,33 @@ h1 ,h2, h3, p {
   .kontakt-icons:focus {
   fill: #2196F3;
   }
-
+  
   .kontakt:last-child{
     margin-right: 0px;
   }
 
 .promo-title{
-   
+ background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/fon.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;  
+     
+}
+.promo-container{
   height: 600px;
   max-width: 1600px;
-  background-image:linear-gradient(
-  to right,
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-  url(../images/fon.jpg);
-  
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
+
 .section.promo-title{
   padding-top: 200px;
   padding-bottom: 200px;
+  
 }
 .button-title{
   font-weight: 700;
@@ -234,32 +238,25 @@ h1 ,h2, h3, p {
   gap: 10px;
   
  }
- .li-incos{
-  width: 44px;
-  height: 44px;
- }
+ 
  .incons-link{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
   
   
-  width: 100%;
-  height: 100%;
   background-color:#FFFFFF;
   border-radius: 50%;
+  fill:#AFB1B8;
  }
  .incons-link:hover,
  .incons-link:focus{
+  fill:var(--header-background);
   background-color: var(--hover-color);
  }
- .icons{
- fill:#AFB1B8 ;
-}
- .icons:hover,
- .icons:focus{
-  fill: var(--body-background);
- }
+ 
  .name{
   font-weight: 500;
   font-size: 16px;
@@ -414,7 +411,7 @@ h1 ,h2, h3, p {
   gap: 30px;
  } 
  
- .client-list{
+ .client-link{
   width: 170px;
   height: 92px;
   
@@ -424,20 +421,16 @@ h1 ,h2, h3, p {
   display:flex;
   align-items: center;
   justify-content: center;
-   
+  fill: #AFB1B8;
  }
- .client-list:hover,
- .client-list:focus{
-  border: 1px solid var(--hover-color) ;
+ 
+ .client-link:hover,
+ .client-link:focus {
+   border: 1px solid var(--hover-color);
+   fill: var(--hover-color);
  }
- .name-client{  
-   fill: #AFB1B8;
-   }
- .name-client:hover,
- .name-client:focus {
-   fill:var(--hover-color);
- }
-
+ 
+ 
 .text{
  font-size: 14px;
  line-height: 1.71;
